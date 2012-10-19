@@ -1,10 +1,10 @@
-// jQuery WipeTouch 1.1.0
+// jQuery TouchStac 1.0
 //
 // Developed and maintained by Devv: http://devv.com
 // This plugin is based on TouchWipe by Andreas Waltl: http://www.netcu.de
 //
 // USAGE
-// $(selector).wipetouch(config);
+// $(selector).touchstac(config);
 //
 // The wipe events should expect the result object with the following properties:
 // speed - the wipe speed from 1 to 5
@@ -12,7 +12,7 @@
 // y - how many pixels moved on the vertical axis
 //
 // EXAMPLE
-//		$(document).wipetouch({
+//		$(document).touchstac({
 //			allowDiagonal: true,
 //			wipeLeft: function(result) { alert("Left on speed " + result.speed) },
 //			wipeTopLeft: function(result) { alert("Top left on speed " + result.speed) },
@@ -20,24 +20,10 @@
 //		});
 //
 //
-// More details at http://wipetouch.codeplex.com/
-//
-// LATEST CHANGES
-// 1.1.0
-// - New: tapToClick, if true will identify taps and and trigger a click on the touched element. Default is false.
-// - Changed: events wipeBottom*** and wipeTop*** renamed to wipeDown*** and wipeUp***.
-// - Changed: better touch speed calculation (was always too fast before).
-// - Changed: speed will be an integer now (instead of float).
-// - Changed: better wipe detection (if Y movement is more than X, do a vertical wipe instead of horizontal).
-// - Bug fix: added preventDefault to touchStart and touchEnd internal events (this was missing).
-// - Other general tweaks to the code.
-//
-//
-// If you want to compress this code, we recommend Jasc: http://jasc.codeplex.com
 
 (function($)
 {
-	$.fn.wipetouch = function(settings)
+	$.fn.touchstac = function(settings)
 	{
 		// ------------------------------------------------------------------------
 		// PLUGIN SETTINGS
