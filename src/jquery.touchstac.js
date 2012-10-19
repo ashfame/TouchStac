@@ -1,8 +1,5 @@
 // jQuery TouchStac 1.0
 //
-// Developed and maintained by Devv: http://devv.com
-// This plugin is based on TouchWipe by Andreas Waltl: http://www.netcu.de
-//
 // USAGE
 // $(selector).touchstac(config);
 //
